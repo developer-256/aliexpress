@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <nav
+        class="bg-[#191919] list-none flex items-center md:gap-5 px-4 md:px-9 pb-3 md:pb-0 pt-1 md:pt-0 md:py-2 static md:sticky top-0 flex-col md:flex-row">
+
+        <button id="menu1Button" class="absolute md:hidden top-5 left-7">
+            <svg class="w-7 h-7 stroke-white stroke-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </button>
+
+        <li class="md:hover:cursor-pointer mr-3 md:mr-0">
+            <img class="w-36 md:w-48"
+                src="img/logo.png">
+        </li>
+
+
+        <li class="flex relative w-[100%] md:flex-1 pl-6 pr-[4px] bg-white items-center rounded-[20px]">
+            <input class="flex-1 py-[10px] text-sm bg-transparent outline-none" placeholder="Search" type="text">
+            <div class="flex items-center justify-center rounded-[20px] w-[52px] h-8 bg-black md:hover:cursor-pointer">
+                <svg class="w-5 h-5 stroke-2 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <div class="text-[#aaaaaa] absolute -bottom-4 left-6 text-xs hidden lg:flex gap-2">
+                <span class="md:hover:cursor-pointer">ps2 controller</span>
+                <span>|</span>
+                <span class="md:hover:cursor-pointer">huawei p30 cardholder case</span>
+                <span>|</span>
+                <span class="md:hover:cursor-pointer">ahegao hoodle</span>
+                <span>|</span>
+                <span class="md:hover:cursor-pointer">hello kitty backpack</span>
+            </div>
+        </li>
+
+        <div class="flex flex-col md:flex-row items-center gap-5">
+            <div id="menu1"
+                class="hidden md:flex flex-col md:flex-row md:items-center gap-3 md:gap-5 absolute top-6 border-gray-500 rounded-xl md:rounded-none left-16 p-3 md:p-0 md:static bg-[#191919] z-10 border-2 md:border-0 md:bg-transparent">
+                <li class="flex items-center md:hover:cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-7 h-7 fill-white" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M512 128a32 32 0 0 1 31.850667 28.928l0.149333 3.072V512a32 32 0 0 1-28.928 31.850667L512 544H160a32 32 0 0 1-3.072-63.850667L160 480l320-0.021333V160a32 32 0 0 1 28.928-31.850667L512 128z m-160 0A74.666667 74.666667 0 0 1 426.666667 202.666667v149.333333a74.666667 74.666667 0 0 1-74.666667 74.666667h-149.333333A74.666667 74.666667 0 0 1 128 352v-149.333333A74.666667 74.666667 0 0 1 202.666667 128z m0 64h-149.333333a10.666667 10.666667 0 0 0-10.666667 10.666667v149.333333a10.666667 10.666667 0 0 0 10.666667 10.666667h149.333333a10.666667 10.666667 0 0 0 10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 0-10.666667-10.666667z m469.333333-64h-149.333333A74.666667 74.666667 0 0 0 597.333333 202.666667v149.333333a74.666667 74.666667 0 0 0 74.666667 74.666667h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333A74.666667 74.666667 0 0 0 821.333333 128z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667z m149.333333 405.333333h-149.333333a74.666667 74.666667 0 0 0-74.666667 74.666667v149.333333a74.666667 74.666667 0 0 0 74.666667 74.666667h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333a74.666667 74.666667 0 0 0-74.666667-74.666667z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667z m-320-64h-149.333333A74.666667 74.666667 0 0 0 128 672v149.333333A74.666667 74.666667 0 0 0 202.666667 896h149.333333a74.666667 74.666667 0 0 0 74.666667-74.666667v-149.333333a74.666667 74.666667 0 0 0-74.666667-74.666667z m-149.333333 64h149.333333a10.666667 10.666667 0 0 1 10.666667 10.666667v149.333333a10.666667 10.666667 0 0 1-10.666667 10.666667h-149.333333a10.666667 10.666667 0 0 1-10.666667-10.666667v-149.333333a10.666667 10.666667 0 0 1 10.666667-10.666667zM512 597.333333a32 32 0 0 1 31.850667 28.928l0.149333 3.072v234.666667a32 32 0 0 1-63.850667 3.072L480 864v-234.666667A32 32 0 0 1 512 597.333333z m352-117.333333a32 32 0 0 1 3.072 63.850667l-3.072 0.149333h-234.666667a32 32 0 0 1-3.072-63.850667l3.072-0.149333h234.666667z"
+                                data-spm-anchor-id="a2g0o.categorymp.header.i0.4eb9AYkXAYkXoe"></path>
+                        </svg>
+                        <p class="text-white md:hidden">Download the app now</p>
+                    </div>
+
+                    <div>
+                        <svg class="w-4 h-4 fill-white hidden md:block" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M253.664 481.536a48 48 0 0 1 65.056-70.4l3.616 3.328L512 608.64l189.664-194.176a48 48 0 0 1 64.192-4.064l3.68 3.264a48 48 0 0 1 4.064 64.192l-3.264 3.68-202.432 207.232a80 80 0 0 1-108.992 2.624l-4.16-3.968-201.088-205.888z">
+                            </path>
+                        </svg>
+                    </div>
+                </li>
+
+                <li class="flex items-center md:hover:cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <img class="w-7" src="img/australia.png">
+                        <p class="text-white md:hidden">Select the language</p>
+                    </div>
+                    <div>
+                        <svg class="w-4 h-4 fill-white hidden md:block" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M253.664 481.536a48 48 0 0 1 65.056-70.4l3.616 3.328L512 608.64l189.664-194.176a48 48 0 0 1 64.192-4.064l3.68 3.264a48 48 0 0 1 4.064 64.192l-3.264 3.68-202.432 207.232a80 80 0 0 1-108.992 2.624l-4.16-3.968-201.088-205.888z">
+                            </path>
+                        </svg>
+                    </div>
+                </li>
+            </div>
+
+            <div class="flex items-center gap-5 md:static absolute top-5 right-7">
+                <li class="flex items-center md:hover:cursor-pointer">
+                    <div>
+                        <svg class="w-6 h-6 fill-white" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M512 105.344a204.010667 204.010667 0 1 0 0 408 204.010667 204.010667 0 0 0 0-408z m0 66.666667a137.322667 137.322667 0 1 1 0 274.645333 137.322667 137.322667 0 0 1 0-274.666667z m114.88 384.426666c138.026667 0 257.877333 94.101333 291.093333 227.456l1.6 6.826667 19.626667 87.317333a33.322667 33.322667 0 0 1-64.256 17.536l-0.810667-2.944-19.605333-87.317333a233.344 233.344 0 0 0-221.504-182.122667l-6.144-0.085333h-229.76c-107.093333 0-200.149333 72.874667-226.218667 176.213333l-1.429333 5.994667-19.626667 87.317333a33.322667 33.322667 0 0 1-65.557333-11.605333l0.512-2.986667 19.626667-87.317333a300.010667 300.010667 0 0 1 285.696-234.197333l6.997333-0.085334h229.76z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <svg class="w-4 h-4 md:block hidden fill-white" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M253.664 481.536a48 48 0 0 1 65.056-70.4l3.616 3.328L512 608.64l189.664-194.176a48 48 0 0 1 64.192-4.064l3.68 3.264a48 48 0 0 1 4.064 64.192l-3.264 3.68-202.432 207.232a80 80 0 0 1-108.992 2.624l-4.16-3.968-201.088-205.888z">
+                            </path>
+                        </svg>
+                    </div>
+                </li>
+
+                <li class="md:hover:cursor-pointer">
+                    <div class="relative">
+                        <svg class="w-6 h-6 fill-white" viewBox="0 0 1024 1024" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="false" focusable="false">
+                            <path
+                                d="M277.333333 938.666667a64 64 0 1 0 0-128 64 64 0 0 0 0 128z m469.333334 0a64 64 0 1 0 0-128 64 64 0 0 0 0 128zM13.610667 103.936a32 32 0 0 1 42.453333-15.658667 174.293333 174.293333 0 0 1 99.626667 133.717334l0.213333 1.984 711.808 0.021333a74.666667 74.666667 0 0 1 74.538667 70.570667l0.128 4.096a74.666667 74.666667 0 0 1-0.384 7.466666l-0.469334 3.733334-57.152 376.533333a96 96 0 0 1-90.346666 81.493333l-4.565334 0.106667H236.010667a96 96 0 0 1-94.869334-81.28l-0.597333-4.522667-44.416-415.978666-0.426667-1.237334a31.872 31.872 0 0 1-1.109333-5.909333L94.442667 256c0-1.045333 0.042667-2.069333 0.149333-3.072l0.064-0.554667-1.877333-17.493333a110.293333 110.293333 0 0 0-58.965334-86.272l-4.544-2.218667a32 32 0 0 1-15.658666-42.453333zM204.16 675.413333a32 32 0 0 0 28.8 28.458667l3.029333 0.149333h553.450667a32 32 0 0 0 31.061333-24.32l0.576-2.88 57.152-376.533333a10.666667 10.666667 0 0 0-8.64-12.096l-1.92-0.170667-704.874666-0.021333 41.386666 387.413333z">
+                            </path>
+                        </svg>
+                        <p
+                            class="border-2 text-black bg-white absolute text-[9px] font-bold h-[10px] w-4 top-0 -right-2 flex justify-center items-center rounded-lg">
+                            0</p>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section
+        class="md:flex hidden px-4 md:px-10 text-white list-none items-center justify-between bg-[#191919] text-base py-3">
+
+        <li
+            class="flex items-center justify-between lg:w-64 px-4 py-2 border rounded-3xl md:hover:cursor-pointer md:hover:bg-[#474747]">
+            <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 stroke-2 fill-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <p class="lg:block hidden">All Categories</p>
+            </div>
+            <svg class="lg:block hidden w-5 h-5 fill-white" viewBox="0 0 1024 1024" width="1em" height="1em"
+                fill="currentColor" aria-hidden="false" focusable="false">
+                <path
+                    d="M253.664 481.536a48 48 0 0 1 65.056-70.4l3.616 3.328L512 608.64l189.664-194.176a48 48 0 0 1 64.192-4.064l3.68 3.264a48 48 0 0 1 4.064 64.192l-3.264 3.68-202.432 207.232a80 80 0 0 1-108.992 2.624l-4.16-3.968-201.088-205.888z">
+                </path>
+            </svg>
+        </li>
+        <li
+            class="text-[#fd384f] rounded-3xl md:px-3 md:py-2 md:hover:cursor-pointer md:hover:bg-[#474747] text-center">
+            11.11 Sale</li>
+        <li class="rounded-3xl md:px-3 md:py-2 md:hover:cursor-pointer md:hover:bg-[#474747] text-center">3+ items from
+            $1.99</li>
+        <li class="rounded-3xl md:px-3 md:py-2 md:hover:cursor-pointer md:hover:bg-[#474747] text-center">First come,
+            50% off</li>
+        <li class="rounded-3xl md:px-3 md:py-2 md:hover:cursor-pointer md:hover:bg-[#474747] text-center">SuperDeals
+        </li>
+        <li
+            class="flex items-center justify-center gap-1 rounded-3xl md:px-3 md:py-2 md:hover:cursor-pointer md:hover:bg-[#474747]">
+            <p>More</p>
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"
+                aria-hidden="false" focusable="false">
+                <path
+                    d="M253.664 481.536a48 48 0 0 1 65.056-70.4l3.616 3.328L512 608.64l189.664-194.176a48 48 0 0 1 64.192-4.064l3.68 3.264a48 48 0 0 1 4.064 64.192l-3.264 3.68-202.432 207.232a80 80 0 0 1-108.992 2.624l-4.16-3.968-201.088-205.888z">
+                </path>
+            </svg>
+        </li>
+    </section>
+
+    <!-- navbar end -->
+
+    <section style="font-family: 'Open Sans', 'Roboto', sans-serif;">
+
+        <p class="px-10 py-6 mb-6 text-[28px] sm:text-[32px] border-b-2 font-bold">Home Appliances</p>
+        <section class="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-y-10 px-8">
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img1.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Electric Toothbrush</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img2.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Electric Heater</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img3.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Water Purifier</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img4.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Coffee Machines</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img5.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Induction Cookers</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img6.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Electric Espresso Pots</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img7.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Exhaust Fan</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img8.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Electric Beverage Warmer</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img9.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Dehumidifier</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <div class="border-2 rounded-full overflow-hidden">
+                    <img class="w-[120px] h-[120px] md:w-[170px] md:h-[170px]" src="img/img10.webp">
+                </div>
+                <p class="text-lg md:text-xl font-semibold text-[#3a3e4a] text-center">Toothbrushes Head</p>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <section class="mt-6" style="font-family: 'Open Sans', 'Roboto', sans-serif;">
+
+        <p class="px-10 py-6 mb-6 text-[28px] sm:text-[32px] border-b-2 font-bold">Best Seller</p>
+        <section class="grid xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2 sm:gap-4 px-8">
+
+
+            <div class="border-2 rounded-2xl p-2 sm:p-4">
+
+                <div class="border-2 rounded-lg"><img src="img/img11.webp"></div>
+
+                <p class="whitespace-nowrap overflow-hidden mt-1 md:text-base text-xs">20 Pcs Replaceable Brush Heads
+                    Dupont Bristle Brush
+                    Refill for Seago/Fairywill Electric Toothbrush FW/SG 507/508/515/551/917/959</p>
+                <div class="flex gap-1 items-center">
+                    <div class="relative inline-block">
+                        <span class=" text-gray-500">★★★★★</span>
+                        <span
+                            class="text-orange-500 absolute left-0 top-0 w-[60%] whitespace-nowrap overflow-hidden">★★★★★</span>
+                    </div>
+                    <p class="hidden sm:block md:text-base text-xs">1000+ sold</p>
+                </div>
+
+                <div class="flex sm:gap-2 sm:flex-row flex-col sm:items-center">
+                    <div class="flex items-end">
+                        <p class="font-semibold  md:text-base text-xs">AU$</p>
+                        <p class="text-lg md:text-2xl font-bold leading-none">8</p>
+                        <p class="font-semibold md:text-base text-xs">.1</p>
+                    </div>
+                    <p class=" text-gray-500 md:text-base text-xs"><del>AU$33.07</del></p>
+                </div>
+
+                <div
+                    class="hidden sm:flex whitespace-nowrap overflow-hidden relative after:content-['...'] after:text-[#f6444f] after:font-semibold after:absolute after:right-0 after:bg-white after:bottom-0 md:after:bottom-1">
+                    <p class="bg-[#f6444f]  md:text-base text-xs">Welcome deal</p>
+                    <p class="text-[#f6444f] font-semibold md:text-base text-xs">. AU$6 off every AU$30 on Nov.11</p>
+                </div>
+
+                <div class="mt-2 md:mt-3 md:text-base text-xs">Free Shipping</div>
+            </div>
+
+
+
+            <div class="border-2 rounded-2xl p-2 sm:p-4">
+
+                <div class="border-2 rounded-lg"><img src="img/img12.webp"></div>
+
+                <p class="whitespace-nowrap overflow-hidden mt-1 md:text-base text-xs">Kemei 2299 Barber Cordless Hair
+                    Trimmer 0mm Zero
+                    Gapped Carving Clipper Detailer Professional Electric Finish Cutting Machine</p>
+                <div class="flex gap-1 items-center">
+                    <div class="relative inline-block">
+                        <span class=" text-gray-500">★★★★★</span>
+                        <span
+                            class="text-orange-500 absolute left-0 top-0 w-[60%] whitespace-nowrap overflow-hidden">★★★★★</span>
+                    </div>
+                    <p class="hidden sm:block md:text-base text-xs">268 sold</p>
+                </div>
+
+                <div class="flex sm:gap-2 sm:flex-row flex-col sm:items-center">
+                    <div class="flex items-end">
+                        <p class="font-semibold md:text-base text-xs">AU$</p>
+                        <p class="text-lg md:text-2xl font-bold leading-none">14</p>
+                        <p class="font-semibold md:text-base text-xs">.36</p>
+                    </div>
+                    <p class="text-gray-500 md:text-base text-xs"><del>AU$68.04</del></p>
+                </div>
+
+                <div
+                    class="hidden sm:flex whitespace-nowrap overflow-hidden relative after:content-['...'] after:text-[#f6444f] after:font-semibold after:absolute after:right-0 after:bg-white after:bottom-0 md:after:bottom-1">
+                    <p class="bg-[#f6444f]  md:text-base text-xs">Welcome deal</p>
+                    <p class="text-[#f6444f] font-semibold md:text-base text-xs">. AU$6 off every AU$30 on Nov.11</p>
+                </div>
+
+                <div class="mt-2 md:mt-3 md:text-base text-xs">Free Shipping</div>
+            </div>
+
+
+
+            <div class="border-2 rounded-2xl p-2 sm:p-4">
+
+                <div class="border-2 rounded-lg"><img src="img/img13.webp"></div>
+
+                <p class="whitespace-nowrap overflow-hidden mt-1 md:text-base text-xs">10 Pcs Replacement Brush Head
+                    Soft Dupont Bristle
+                    Refills for Fairywill/Seago Electric Toothbrush FW/SG 507/508/515/551/917/959</p>
+                <div class="flex gap-1 items-center">
+                    <div class="relative inline-block">
+                        <span class=" text-gray-500">★★★★★</span>
+                        <span
+                            class="text-orange-500 absolute left-0 top-0 w-[60%] whitespace-nowrap overflow-hidden">★★★★★</span>
+                    </div>
+                    <p class="hidden sm:block md:text-base text-xs">600+ sold</p>
+                </div>
+
+                <div class="flex sm:gap-2 sm:flex-row flex-col sm:items-center">
+                    <div class="flex items-end">
+                        <p class="font-semibold md:text-base text-xs">AU$</p>
+                        <p class="text-lg md:text-2xl font-bold leading-none">2</p>
+                        <p class="font-semibold md:text-base text-xs">.31</p>
+                    </div>
+                    <p class="text-gray-500 md:text-base text-xs"><del>AU$8.69</del></p>
+                </div>
+
+                <div
+                    class="hidden sm:flex whitespace-nowrap overflow-hidden relative after:content-['...'] after:text-[#f6444f] after:font-semibold after:absolute after:right-0 after:bg-white after:bottom-0 md:after:bottom-1">
+                    <p class="bg-[#f6444f]  md:text-base text-xs">Welcome deal</p>
+                    <p class="text-[#f6444f] font-semibold md:text-base text-xs">. AU$6 off every AU$30 on Nov.11</p>
+                </div>
+
+                <div class="mt-2 md:mt-3 md:text-base text-xs">Free Shipping</div>
+            </div>
+
+
+
+            <div class="border-2 rounded-2xl p-2 sm:p-4">
+
+                <div class="border-2 rounded-lg"><img src="img/img14.webp"></div>
+
+                <p class="whitespace-nowrap overflow-hidden mt-1 md:text-base text-xs">10pcs Electric Toothbrush
+                    Replacement Heads Work For
+                    Fairywill Electric Toothbrush FW-507 FW-508 515 FW-515 FW-551 YUNCHI Y1</p>
+                <div class="flex gap-1 items-center">
+                    <div class="relative inline-block">
+                        <span class=" text-gray-500">★★★★★</span>
+                        <span
+                            class="text-orange-500 absolute left-0 top-0 w-[60%] whitespace-nowrap overflow-hidden">★★★★★</span>
+                    </div>
+                    <p class="hidden sm:block md:text-base text-xs">352 sold</p>
+                </div>
+
+                <div class="flex sm:gap-2 sm:flex-row flex-col sm:items-center">
+                    <div class="flex items-end">
+                        <p class="font-semibold md:text-base text-xs">AU$</p>
+                        <p class="text-lg md:text-2xl font-bold leading-none">1</p>
+                        <p class="font-semibold md:text-base text-xs">.17</p>
+                    </div>
+                    <p class="text-gray-500 md:text-base text-xs"><del>AU$7.55</del></p>
+                </div>
+
+                <div
+                    class="hidden sm:flex whitespace-nowrap overflow-hidden relative after:content-['...'] after:text-[#f6444f] after:font-semibold after:absolute after:right-0 after:bg-white after:bottom-0 md:after:bottom-1">
+                    <p class="bg-[#f6444f]  md:text-base text-xs">Welcome deal</p>
+                    <p class="text-[#f6444f] font-semibold md:text-base text-xs">. AU$6 off every AU$30 on Nov.11</p>
+                </div>
+
+                <div class="mt-2 md:mt-3 md:text-base text-xs">Free Shipping</div>
+            </div>
+
+
+
+            <div class="border-2 rounded-2xl p-2 sm:p-4">
+
+                <div class="border-2 rounded-lg"><img src="img/img15.webp"></div>
+
+                <p class="whitespace-nowrap overflow-hidden mt-1 md:text-base text-xs">10Pcs Replacement Brush Heads for
+                    Philips HX6064
+                    HX6930 HX6730 Sonic Electric Toothbrush Vacuum Soft DuPont Bristle Nozzles</p>
+                <div class="flex gap-1 items-center">
+                    <div class="relative inline-block">
+                        <span class=" text-gray-500">★★★★★</span>
+                        <span
+                            class="text-orange-500 absolute left-0 top-0 w-[60%] whitespace-nowrap overflow-hidden">★★★★★</span>
+                    </div>
+                    <p class="hidden sm:block md:text-base text-xs">351 sold</p>
+                </div>
+
+                <div class="flex sm:gap-2 sm:flex-row flex-col sm:items-center">
+                    <div class="flex items-end">
+                        <p class="font-semibold md:text-base text-xs">AU$</p>
+                        <p class="text-lg md:text-2xl font-bold leading-none">5</p>
+                        <p class="font-semibold md:text-base text-xs">.2</p>
+                    </div>
+                    <p class="text-gray-500 md:text-base text-xs"><del>AU$23.28</del></p>
+                </div>
+
+                <div
+                    class="hidden sm:flex whitespace-nowrap overflow-hidden relative after:content-['...'] after:text-[#f6444f] after:font-semibold after:absolute after:right-0 after:bg-white after:bottom-0 md:after:bottom-1">
+                    <p class="bg-[#f6444f]  md:text-base text-xs">Welcome deal</p>
+                    <p class="text-[#f6444f] font-semibold md:text-base text-xs">. AU$6 off every AU$30 on Nov.11</p>
+                </div>
+
+                <div class="mt-2 md:mt-3 md:text-base text-xs">Free Shipping</div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
