@@ -61,7 +61,7 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
-  /* 2 */
+  /* 2 */ 
 }
 
 /*
@@ -416,6 +416,7 @@ object {
   /* 1 */
   vertical-align: middle;
   /* 2 */
+  cursor: pointer;
 }
 
 /*
@@ -1211,4 +1212,11 @@ video {
   .xl\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+}
+
+.copyrightText{
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 2px;
+  color: #696b6d;
 }
